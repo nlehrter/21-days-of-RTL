@@ -18,7 +18,7 @@ module day7 (
         end
     end
     
-    assign lfsr_d[0] = lfsr_q[1] ^ lfsr_q[3];
+    assign lfsr_d = {lfsr_q[2:0],lfsr_q[1] ^ lfsr_q[3]};
     assign lfsr_o = lfsr_q;
 
 endmodule
