@@ -2,14 +2,14 @@
 #include <iostream>
 #include <verilated.h>
 #include <verilated_vcd_c.h>
-#include "Valu.h"
-#include "Valu___024unit.h"
+#include "Vdff.h"
+#include "Vdff___024unit.h"
 
 #define MAX_SIM_TIME 20
 vluint64_t sim_time = 0;
 
 int main(int argc, char** argv, char** env) {
-    Valu *dut = new Valu;
+    Vdff *dut = new Vdff;
 
     Verilated::traceEverOn(true);
     VerilatedVcdC *m_trace = new VerilatedVcdC;

@@ -1,6 +1,6 @@
 // Different DFF
 
-module day2 (
+module dff (
   input     logic      clk,
   input     logic      reset,
 
