@@ -5,4 +5,5 @@ module day9# (
     output wire[VEC_W-1:0] gray_o
 )
 
+    assign gray_o = bin_i;
 endmodule
